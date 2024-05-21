@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container1">
+        <nav class="nav">
+            <div class="navbar" id="navbar">
+                <!-- <img src="img/6toos3.png" alt="brand_logo" class="navbar-brand"> -->
+                <a href="" class="brand">6toos</a>
+                <div class="menu">  
+                    <ul class="navbar-content" id="nav-content">
+                        <li class="navbar-item active"><a href="#home">Home</a></li>
+                        <li class="navbar-item"><a href="#about">About</a></li>
+                        <li class="navbar-item"><a href="#service">Services</a></li>
+                        <li class="navbar-item"><a href="#portfolio">Portfolio</a></li>
+                        <li class="navbar-item"><a href="#contact">Contact</a></li>
+                        <li class="navbar-last" id="download"><a href="#">Download CV</a></li>
+                    </ul>
+                </div>
+                <div class="hamburger">
+                    <span class="menu" id="menu">
+                        <i class="fas fa-bars menu-btn"></i>
+                    </span>
+                    <span class="close" id="close">
+                        <i class="fas fa-times close-btn"></i>
+                    </span>
+                </div>
+                
+            </div>
+        </nav>
+
+        <!-- Home page... -->
+        <section id="home">
+            <div class="home">
+                <div class="details">
+                    <div>
+                        <p class="mainP">
+                            <span class="first">Hi, i'm</span> <br><span class="name">Sixtus Offoegbu,</span><br> from Imo state, Nigeria
+                            <p class="info">
+                                This is my official portfolio website to show all details<br> and work experience i have gathered so far
+                            </p>
+                        </p>
+                        <form id="form">
+                            <input type="search" id="search" placeholder="Write your quick mail here...">
+                            <button type="submit">Let's Chat</button>
+                        </form>
+                    </div>
+                </div>
+                <img src="img/bg-image.png" alt="" class="img">
+            </div>
+        </section>
+
+        <!-- about page -->
+        <section id="about" class="about">
+            <div class="container">
+                <img src="./img/profile.JPG" alt="" class="profile">
+                <div class="info1">
+                    <h3>About <span>me</span></h3>
+                    <p>i'm a genius of my own world that likes to utilize every situation in my enviroment, I tend to bring out opportunities from every condition <br>In a situation where my resources are limited, then alone do I see the need for an external assistance</p>
+                    <div class="tab-titles fold">
+                        <p class="tab-links active-links" onclick="opentab('skills')" >Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')" >Experience</p>
+                        <p class="tab-links" onclick="opentab('education')" >Education</p>
+                    </div>
+                    <div class="tab-content active-tab" id="skills">
+                        <ul>
+                            <li><span>Design</span><br> Graphics Design</li>
+                            <li><span>Web Design</span><br> Front-end Developer</li>
+                            <li><span>Programming</span><br> Beginner Java Programming</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="experience">
+                        <ul>
+                            <li><span>2015</span><br> C++ programming</li>
+                            <li><span>2018</span><br> Java programming & Web Design</li>
+                            <li><span>2021</span><br> Graphics Design</li>
+                            <li><span>2021</span><br> Front-end development at Oluaka Institute</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="education">
+                        <ul>
+                            <li><span>2014</span><br> Graduated from Dee Ultimate Comp. High School</li>
+                            <li><span>2018</span><br> Internship at Hubney</li>
+                            <li><span>2021</span><br> Graduated from FUTO</li>
+                            <li><span>2022</span><br> Graduated from Oluaka Institute of learning</li>
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+        </section>
+
+        <!-- service page -->
+        <section class=" service" id="service">
+            <div class="container" >
+                    <div class="header">
+                        <h3><span>My</span> Services</h3>
+                    </div>
+                    <div class="skills">
+                        <div class="web box">
+                            <i class="fa-brands fa-aws"></i>
+                            <h4>web design</h4>
+                            <p>
+                                i'm confident that I can provide a good web interface that meet the standard of W3 and with my great choice of colour, I provide awesome interface that'll wow my client thereby creating for them a unique result
+                            </p>
+                        </div>
+                        <div class="graphics box">
+                            <i class="fa-solid fa-image"></i>
+                            <h4>graphics design</h4>
+                            <p>
+                                My passion for beautiful designs is what motivated me to pursue a career in graphics and proud without an atom of egoism to say I've been able to make some designs for a few of my friends and their reactions were encouraging, thereby inspiring me to do more. Getting an enviroment that inspires such gesture is what i seek so as to attain more height in it
+                            </p>
+                        </div>
+                        <div class="java box">
+                            <i class="fa-solid fa-code"></i>
+                            <h4>java programming</h4>
+                            <p>
+                                Finding a solution to problems and digitalization has always been my priority since I embarked on the journey of programming and it hasn't been a bed of roses because i have explored some languages before this and i find this as one which i would have to do wonders with
+                            </p>
+                        </div>
+                    </div>
+            </div>
+        </section>
+
+        <!-- potfolio page -->
+        <section class="portfolio" id="portfolio">
+            <div class="container">
+                <div class="title">
+                    <h3 class="titleText">My <span>P</span>ortfolio</h3>
+                    <p>
+                        This slide shows a few projects i did, it is a combination of graphics work and web development
+                    </p>
+                </div>
+                <div class="content">
+                    <div class="box">
+                        <div class="img8x">
+                            <img src="img/CYON copy.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h2>Special Salads</h2>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="img8x">
+                            <img src="img/season's greeting dashing.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h2>Special Soup</h2>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="img8x">
+                            <img src="img/EMEM_LOGO.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h2>Special Pasta</h2>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="img8x">
+                            <img src="img/porfolio.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h2>Special Salads</h2>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="img8x">
+                            <img src="img/jcc updated.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h2>Special Soup</h2>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="img8x">
+                            <img src="img/Nwiwu_2 copy.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h2>Special Pasta</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="title">
+                    <a href="#" class="btn">View All</a>
+                </div>
+            </div>
+        </section>
+
+    <!-- contact page -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="title">
+                    <h3 class="titleText"><span>C</span>ontact Us</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <form>
+                    <div class="contactForm">
+                        <h3>Send Message</h3>
+                        <div class="inputBox">
+                            <input type="text" placeholder="Name" required>
+                        </div>
+                        <div class="inputBox">
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                        <div class="inputBox">
+                            <textarea placeholder="Name"></textarea>
+                        </div>
+                        <div class="inputBox">
+                            <input type="submit" value="send">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <div class="copyrightText">
+            <p>Copyright 2021 <a href="#">Online Tutorials</a>. All Right Reserved</p>
+        </div>
+    </div>
+
+
+    <!-- Script part... -->
+    <script defer src="https://kit.fontawesome.com/a86ce77879.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

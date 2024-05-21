@@ -38,3 +38,13 @@ close.addEventListener("click", (e) => {
   close.style.display = "none";
   menu.style.display = "block";
 })
+
+let btn = document.getElementById("btn");
+let hide = document.querySelector(".hide");
+
+btn.addEventListener("click", () => {
+  if (hide.style.display === "none") {
+    hide.style.display = "flex";
+  };
+  console.log("clicked!")
+})

@@ -323,9 +323,8 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
+    /* flex-direction: row; */
     flex-wrap: wrap;
-    /* margin-top: 40px; */
 }
 .portfolio .content .box {
     width: 340px;
@@ -355,25 +354,32 @@ section{
     font-weight: 400;
     color: var(--black);
 }
+.view_all{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .btn{
     text-decoration: none;
     background-color: aqua;
     color: var(--black);
-    transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    border-radius: 15px;
-    padding: 10px;
-    font-weight:bold;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 14px;
+    font-weight:500;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 .btn:hover{
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     background-color: var(--font);
 }
 
@@ -447,7 +453,10 @@ section{
 }
 
 /* media_query */
-@media only screen and (max-width: 1020px){
+@media only screen and (max-width: 1024px){
+    .hide{
+        /* display:none; */
+    }
     .about .container{
         flex-wrap: wrap;
         padding: 40px 20px;
@@ -509,6 +518,7 @@ section{
         min-width: 400px;
         background: rgba(8, 8, 8, 0.8);
         margin-top: 40px;
+        padding-bottom: 20px;
         transition: all 0.3s;
         -webkit-transition: all 0.3s;
         -moz-transition: all 0.3s;

@@ -63,10 +63,10 @@ const person = {
   age: 26
 };
 const { name, age } = person;
-console.log(name);
+// console.log(name);
 
 // destructuring
 const naming = ["Sixtus", "Offoegbu", "nothing", "everything", "state"];
 const [firstName, lastName, ...rest] = naming;
-console.log(firstName, lastName);
-console.log(rest)
+// console.log(firstName, lastName);
+// console.log(rest)

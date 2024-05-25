@@ -48,6 +48,14 @@ btn.addEventListener("click", () => {
   };
   console.log("clicked!")
 })
+{
+  let link = document.getElementById("link");
+  let navbarLink = document.querySelector(".navbar-item");
+  link.addEventListener("click", () => {
+    navbarLink.classList.toggle("active", true);
+    console.log("clicked")
+  })
+}
 
 
 const person = {

@@ -15,11 +15,11 @@
                 <a href="" class="brand">6t<span>oo</span>s</a>
                 <div class="menu">  
                     <ul class="navbar-content" id="nav-content">
-                        <li class="navbar-item active"><a href="#home">Home</a></li>
-                        <li class="navbar-item"><a href="#about">About</a></li>
-                        <li class="navbar-item"><a href="#service">Services</a></li>
-                        <li class="navbar-item"><a href="#portfolio">Portfolio</a></li>
-                        <li class="navbar-item"><a href="#contact">Contact</a></li>
+                        <li id="link" class="navbar-item"><a href="#home">Home</a></li>
+                        <li id="link" class="navbar-item"><a href="#about">About</a></li>
+                        <li id="link" class="navbar-item"><a href="#service">Services</a></li>
+                        <li id="link" class="navbar-item"><a href="#portfolio">Portfolio</a></li>
+                        <li id="link" class="navbar-item"><a href="#contact">Contact</a></li>
                         <li class="navbar-last" id="download"><a href="#">Download CV</a></li>
                     </ul>
                 </div>
@@ -50,7 +50,7 @@
                         </div>
                         <form id="form">
                             <input type="search" id="search" placeholder="Write your quick mail here...">
-                            <button type="submit">Let's Chat</button>
+                            <button type="submit" class="chat">Let's Chat</button>
                         </form>
                     </div>
                 </div>
@@ -64,7 +64,7 @@
                 <img src="./img/profile.JPG" alt="" class="profile">
                 <div class="info1">
                     <h3>About <span>me</span></h3>
-                    <p>i'm a genius of my own world that likes to utilize every situation in my enviroment, I tend to bring out opportunities from every condition <br>In a situation where my resources are limited, then alone do I see the need for an external assistance</p>
+                    <p>With a BTech in Information Technology from Federal University of Technology Owerri Nigeria, I honed my skills in programming and web development. My technical expertise was further developed during a focused internship in frontend web development at Oluaka Institute, where I contributed to various projects, effectively managing remote work challenges. My core competency lies in creating intuitive and responsive web interfaces, which is backed by a solid educational foundation and practical experience acquired over a significant period. As part of a collaborative team at Oluaka, we aimed to deliver user-centric solutions that align with the latest industry standards.</p>
                     <div class="tab-titles fold">
                         <p class="tab-links active-links" onclick="opentab('skills')" >Skills</p>
                         <p class="tab-links" onclick="opentab('experience')" >Experience</p>
@@ -198,7 +198,7 @@
         <section class="contact" id="contact">
             <div class="container">
                 <div class="title">
-                    <h3 class="titleText"><span>C</span>ontact Us</h3>
+                    <h3 class="titleText"><span>C</span>ontact Me</h3>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                 </div>
                 <form>
@@ -211,10 +211,10 @@
                             <input type="email" placeholder="Email" required>
                         </div>
                         <div class="inputBox">
-                            <textarea placeholder="Name"></textarea>
+                            <textarea id="subject" placeholder="Your Message..." style="height: 150px;"></textarea>
                         </div>
-                        <div class="inputBox">
-                            <input type="submit" value="send">
+                        <div class="submit">
+                            <button type="submit" value="send">Send</button>
                         </div>
                     </div>
                 </form>
@@ -222,7 +222,7 @@
         </section>
 
         <div class="copyrightText">
-            <p>Copyright 2021 <a href="#">Online Tutorials</a>. All Right Reserved</p>
+            <p>Copyright 2021 <a href="#">My Portfolio Page</a>. All Right Reserved</p>
         </div>
     </div>
 

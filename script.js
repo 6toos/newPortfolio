@@ -47,36 +47,14 @@ btn.addEventListener("click", () => {
   };
 })
 {
-  let link = document.getElementById("link");
-  let nav_content = document.getElementById("nav-content");
-  var navlink = nav_content.getElementsByClassName("navbar-item");
+  // let link = document.getElementById("link");
+  var navlink = document.getElementsByClassName("navbar-item");
   // let navbarLink = link.getElementsByClassName("navbar-item");
-  link.addEventListener("click", (e) => {
+  function activate(){
     // navlink.classList.toggle("active");
-    navlink.forEach((link) => {
-      link.classList.toggle("active");
-    })
-  })
-  // for (var i = 0; i < navbarLink.length; i++) {
-  //   navbarLink[i].addEventListener("click", function () {
-  //     var current = document.getElementsByClassName("active");
-  //     console.log(current)
-  //     current[0].className = current[0].className.replace(" active", "");
-  //     this.className += " active";
-  //   });
-  // }
+    for (nav_link of navlink) {
+      nav_link.classList.remove("active");
+    }
+    event.currentTarget.classList.add("active");
+  }
 }
-
-
-const person = {
-  name: "sixtus",
-  age: 26
-};
-const { name, age } = person;
-// console.log(name);
-
-// destructuring
-const naming = ["Sixtus", "Offoegbu", "nothing", "everything", "state"];
-const [firstName, lastName, ...rest] = naming;
-// console.log(firstName, lastName);
-// console.log(rest)

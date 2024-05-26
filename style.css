@@ -20,7 +20,6 @@ body{
     min-height: 1000px;
     font-family: Arial, Helvetica, sans-serif;
     /* width: min(80%, 70.5rem); */
-    scroll-behavior: smooth;
 }
 img{
     display: block;
@@ -157,34 +156,23 @@ section{
 .first, .info{
     color: rgb(148, 146, 146);
 }
-[type="search"], form .chat{
-    text-decoration: none;
-    height: 40px;
-    border-style: none;
-    border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
+.fab{
+    font-size: 30px;
+    color: #262626;
+    padding-right: 10px;
+    transition: transform 0.7s ease-in-out;
+    -webkit-transition: transform 0.7s ease-in-out;
+    -moz-transition: transform 0.7s ease-in-out;
+    -ms-transition: transform 0.7s ease-in-out;
+    -o-transition: transform 0.7s ease-in-out;
 }
-form .chat{
-    width: 20%;
-    transition: 0.3s ease-in-out;
-    -webkit-transition: 0.3s ease-in-out;
-    -moz-transition: 0.3s ease-in-out;
-    -ms-transition: 0.3s ease-in-out;
-    -o-transition: 0.3s ease-in-out;
-}
-form .chat:hover{
-    background-color: aqua;
-}
-[type=search]{
-    font-size: 18px;
-    width: 70%;
-    background-color: transparent;
-    border: 1px dotted aqua;
-    color: #e1e9e5;
-    padding: 5px 10px;
+.fab:hover{
+    color: aqua;
+    transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
 }
 .img{
     filter: brightness(80%);
@@ -406,28 +394,20 @@ form .chat:hover{
     background-color: var(--font);
 }
 
+
 /* contact page */
 .contact{
     padding: 60px 0;
 }
+.container{
+    padding-top: 10px;
+}
 form{
     max-width: 500px;
 }
-.contact {
-    background: url(okay.png);
-    background-size: cover;
-}
 .contactForm {
-    padding: 20px;
-    background: #fff;
-    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+    padding: 15px;
     width: 100%;
-}
-.contactForm h3 {
-    color: #111;
-    font-size: 1.2em;
-    margin: 20px 0;
-    font-weight: 500;
 }
 .contactForm .inputBox {
     position: relative;
@@ -437,17 +417,18 @@ form{
 .contactForm .inputBox input,
 .contactForm .inputBox textarea {
     width: 100%;
-    border: 1px solid #555;
-    padding: 10px;
-    color: #111;
+    border: 0;
+    padding: 15px;
+    outline: none;
+    color: #fff;
     font-size: 16px;
-    font-weight: 300;
     resize: none;
-}
-.submit{
-    color: #111;
-    font-weight: 300;
-    resize: none;
+    background: #262626;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
 }
 .submit button {
     color: var(--black);
@@ -455,28 +436,27 @@ form{
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 2px;
-    transition: 0.3s ease-in-out;
-    font-weight: 500;
+    transition: background 0.3s ease-in-out;
+    font-weight: 700;
     border-radius: 4px;
     border: none;
     cursor: pointer;
     padding: 12px 20px;
-    -webkit-transition: 0.3s ease-in-out;
-    -moz-transition: 0.3s ease-in-out;
-    -ms-transition: 0.3s ease-in-out;
-    -o-transition: 0.3s ease-in-out;
+    -webkit-transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    -ms-transition: background 0.3s ease-in-out;
+    -o-transition: background 0.3s ease-in-out;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     -ms-border-radius: 4px;
     -o-border-radius: 4px;
 }
 .submit button:hover{
-    background: rgb(36, 190, 190);
-    color: var(--font);
+    background: rgb(41, 216, 216);
 }
 
 .copyrightText {
-    padding: 8px 40px;
+    padding: 8px;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     text-align: center;
     display: flex;
@@ -490,6 +470,10 @@ form{
     color: aqua;
     font-weight: 500;
     text-decoration: none;
+}
+#msg{
+    display: block;
+    margin-top: 20px;
 }
 
 @media only screen and (max-width: 480px){
@@ -685,6 +669,9 @@ form{
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    .copyrightText{
+        font-size: 14px;
     }
 }
 

@@ -29,7 +29,6 @@ menu.addEventListener("click", (e) => {
   menu.style.display = "none";
   close.style.display = "flex";
   navbar.style.background = "rgba(8, 8, 8, 0.8)";
-  console.log("clicked")
 })
 
 close.addEventListener("click", (e) => {
@@ -46,15 +45,26 @@ btn.addEventListener("click", () => {
   if (hide.style.display === "none") {
     hide.style.display = "flex";
   };
-  console.log("clicked!")
 })
 {
   let link = document.getElementById("link");
-  let navbarLink = document.querySelector(".navbar-item");
-  link.addEventListener("click", () => {
-    navbarLink.classList.toggle("active", true);
-    console.log("clicked")
+  let nav_content = document.getElementById("nav-content");
+  var navlink = nav_content.getElementsByClassName("navbar-item");
+  // let navbarLink = link.getElementsByClassName("navbar-item");
+  link.addEventListener("click", (e) => {
+    // navlink.classList.toggle("active");
+    navlink.forEach((link) => {
+      link.classList.toggle("active");
+    })
   })
+  // for (var i = 0; i < navbarLink.length; i++) {
+  //   navbarLink[i].addEventListener("click", function () {
+  //     var current = document.getElementsByClassName("active");
+  //     console.log(current)
+  //     current[0].className = current[0].className.replace(" active", "");
+  //     this.className += " active";
+  //   });
+  // }
 }
 
 

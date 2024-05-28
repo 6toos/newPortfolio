@@ -58,3 +58,27 @@ btn.addEventListener("click", () => {
     event.currentTarget.classList.add("active");
   }
 }
+
+// code for the database using google sheet
+
+const scriptURL =
+  "https://script.google.com/macros/s/AKfycbz9KTt5tSrRV_RWi8Pi9yMMwkn4xm7WoPnZNbNgAcPRzdmlxAtrejx5GGc5l_LDrEav/exec";
+const form = document.forms["submit-to-google-sheet"];
+const msg = document.getElementById("msg");
+const subject = document.getElementById("subject");
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  if (subject.value == "") {
+    alert("Message box can't be empty!");
+  }
+  fetch(scriptURL, { method: "POST", body: new FormData(form) })
+    .then((response) => {
+      msg.innerHTML = "Message sent Successfully...";
+      setTimeout(() => {
+        msg.innerHTML = "";
+      }, 3000);
+      form.reset();
+    })
+    .catch((error) => console.error("Error!", error.message));
+});

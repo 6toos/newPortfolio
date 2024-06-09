@@ -48,9 +48,9 @@ btn.addEventListener("click", () => {
 })
 {
   // let link = document.getElementById("link");
-  var navlink = document.getElementsByClassName("navbar-item");
+  let navlink = document.getElementsByClassName("navbar-item");
   // let navbarLink = link.getElementsByClassName("navbar-item");
-  function activate(){
+  function activate(event){
     // navlink.classList.toggle("active");
     for (nav_link of navlink) {
       nav_link.classList.remove("active");

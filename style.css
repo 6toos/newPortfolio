@@ -679,8 +679,12 @@ form{
 @media only screen and (max-width: 1024px){
 
     /* Home page */
-    .container{
+    .container1{
         background: url(./img/bg-image-sm.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: right;
     }
     .details{
     display: flex;

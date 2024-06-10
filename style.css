@@ -705,14 +705,14 @@ form{
     display: flex;
     justify-content: center;
     align-items: center;
-    }
+    /* }
     .container1{
     background: url(img/bg-image.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    }
+    } */
     .info1{
         font-size: 14px;
     }

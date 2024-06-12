@@ -688,7 +688,9 @@ form{
     }
     .fab{
         color: aqua;
-    }
+        filter: brightness(60%);
+        -webkit-filter: brightness(60%);
+}
     .details{
     display: flex;
     justify-content:left;

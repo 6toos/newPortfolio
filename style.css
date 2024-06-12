@@ -686,6 +686,9 @@ form{
         background-attachment: fixed;
         background-position: right;
     }
+    .fab{
+        color: aqua;
+    }
     .details{
     display: flex;
     justify-content:left;

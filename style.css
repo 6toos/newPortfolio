@@ -690,6 +690,7 @@ form{
         color: aqua;
         filter: brightness(60%);
         -webkit-filter: brightness(60%);
+        font-size: 16px;
 }
     .details{
     display: flex;
